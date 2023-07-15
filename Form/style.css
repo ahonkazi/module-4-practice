@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: url('./img/bg.jpg');
+}
+
+.screen-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.179);
+    backdrop-filter: blur(6px);
+    border-radius: 7px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+
+}
+
+.form-body {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.logo {
+    width: 60px;
+}
+
+form {
+    width: 380px;
+    padding: 24px;
+}
+
+input,
+button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 14px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+input {
+    background-color: transparent;
+}
+
+button {
+    background-color: #3174f0;
+    color: white;
+    position: relative;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.form-footer {
+    padding: 20px 0px;
+}
+
+.line {
+    height: 2px;
+    background-color: #477ee4e7;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a img {
+    width: 28px;
+}
+
+a {
+    background-color: #ffffff67;
+    height: 40px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.input-box {
+    background-color: rgba(255, 255, 255, 0.402);
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.left-icon {
+    background-color: #3174f0;
+    height: 100%;
+    width: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-icon img {
+    width: 22px;
+    position: relative;
+    z-index: 1000;
+}
+
+.form-footer a {
+    position: relative;
+
+}
+
+
+
+.form-footer a::after {
+    content: '';
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    background-color: #f0318d51;
+    transition: all 300ms;
+    left: 0;
+    z-index: 100;
+}
+
+button span {
+    z-index: 1000;
+    position: relative;
+}
+
+button::after {
+    content: '';
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    background-color: #f0318d51;
+    transition: all 300ms;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+button:hover::after {
+
+    width: 100%;
+
+}
+
+.form-footer a:hover::after {
+    width: 100%;
+
+}
